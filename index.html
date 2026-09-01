@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Roamly travel recommendations for beaches, temples and countries.">
+  <title>Roamly | Find your next story</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Roamly home"><span>R</span> Roamly</a>
+    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav aria-label="Main navigation">
+      <a class="active" href="index.html">Home</a>
+      <a href="about.html">About us</a>
+      <a href="contact.html">Contact us</a>
+    </nav>
+    <form class="search" id="searchForm" role="search">
+      <label class="sr-only" for="searchInput">Search destinations</label>
+      <input id="searchInput" type="search" placeholder="Try ‘beach’ or ‘Japan’" autocomplete="off">
+      <button type="submit">Search</button>
+      <button class="clear" id="clearBtn" type="button">Clear</button>
+    </form>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">Your next chapter starts here</p>
+        <h1>Go farther.<br><em>Feel more.</em></h1>
+        <p class="hero-copy">Handpicked places, honest inspiration, and the little details that turn a trip into a story worth telling.</p>
+        <a class="button button-light" href="#discover">Explore destinations <span>↗</span></a>
+      </div>
+      <div class="hero-stats" aria-label="Roamly statistics">
+        <div><strong>42</strong><span>countries explored</span></div>
+        <div><strong>180+</strong><span>places curated</span></div>
+        <div><strong>12k</strong><span>happy travelers</span></div>
+      </div>
+      <div class="scroll-note">Scroll to wander <span>↓</span></div>
+    </section>
+
+    <section class="intro section" id="discover">
+      <div>
+        <p class="eyebrow dark">Travel, thoughtfully</p>
+        <h2>Not just where to go.<br><em>Why it matters.</em></h2>
+      </div>
+      <p>We look beyond the postcard to find places that stay with you. Search by <b>beach</b>, <b>temple</b>, or a country such as <b>Japan</b> to begin.</p>
+    </section>
+
+    <section class="results-section section" id="recommendations">
+      <div class="section-heading">
+        <div><p class="eyebrow dark">Curated for you</p><h2 id="resultsTitle">Places worth the journey</h2></div>
+        <span id="resultCount">6 recommendations</span>
+      </div>
+      <div class="card-grid" id="resultsGrid" aria-live="polite"></div>
+      <div class="empty-state" id="emptyState" hidden>
+        <span>⌁</span><h3>No journeys found</h3><p>Try “beach”, “temple”, “Japan”, “Indonesia”, or “Greece”.</p>
+      </div>
+    </section>
+
+    <section class="quote-section">
+      <p>“The world is a book, and those who do not travel read only one page.”</p>
+      <span>— Saint Augustine</span>
+    </section>
+  </main>
+
+  <footer>
+    <a class="brand" href="index.html"><span>R</span> Roamly</a>
+    <p>Travel deeper. Come home different.</p>
+    <p>© 2026 Roamly</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
